@@ -52,7 +52,7 @@ const Pages: CollectionConfig = {
         {
           type: "blocks",
           name: "content",
-          localized: true,            //  <=================== This fails
+          localized: true,            //  <=================== 1) If this "true"
           blocks: [
             {
               slug: 'header',
@@ -88,7 +88,7 @@ const Pages: CollectionConfig = {
                 },
                 {
                   name: "content",
-                  type: "blocks",
+                  type: "blocks",     // <======================= 2) This fails
                   blocks: [
                     {
                       slug: "richtext",
